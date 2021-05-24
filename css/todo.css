@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    background-color: #f5f5f5;
+    overflow-y: hidden;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .16);
+    width: 659px;
+    height: 480px;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+}
+
+#addBgColor {
+    background-color: #56a780;
+}
+
+h3 {
+    margin: 40px 0 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.add-elements {
+    margin: 12px 0;
+    text-align: center;
+}
+
+input {
+    padding: 6px 4px;
+    width: 70%;
+}
+
+button {
+    padding: 7px 14px;
+    background-color: #00b0ff;
+    border: none;
+    border-radius: 4px;
+    color: #fafafa;
+}
+
+.element-list {
+    height: auto;
+    /*overflow-y: scroll;*/
+}
+
+ul {
+    padding: 15px;
+    margin-right: 90px;
+    margin-left: 45px;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px 5px 6px;
+    /*background-color: #fff;*/
+    margin: 12px 0 0;
+    /*box-shadow: 0 2px 8px rgba(0, 0, 0, .16);*/
+    border-radius: 3px;
+    transition: .4s;
+    opacity: 0.7;
+}
+
+hr {
+    margin-left: 9px;
+    color: black;
+}
+
+button:hover {
+    background-color: #1565c0;
+}
+
+ul li:hover {
+    box-shadow: 0 2px 8px rgba(128, 68, 68, 0.16);
+    background-color: white;
+}
+
+.checked {
+    text-decoration: line-through;
+    background-color: #e0e0e0;
+}
+
+
+/*doing style*/
+
+#doingBgColor {
+    background-color: #98ccd6;
+}
+
+ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    padding: 15px;
+    margin-right: 90px;
+    margin-left: 80px;
+}
+
+ol li {
+    counter-increment: my-awesome-counter;
+    padding: 10px 5px 6px;
+    background-color: #fff;
+    margin: 12px 0 0;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 16%);
+    border-radius: 3px;
+    transition: .4s;
+}
+
+ol li::before {
+    content: counter(my-awesome-counter) ".0 ";
+    color: #fcd000;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transform: rotate(-10deg);
+    background: black;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 1px 5px 0 #939;
+    margin-right: 20px;
+}
+
+
+/*done style*/
+
+#doneBgColor {
+    background-color: #da5416;
+}
+
+.doneLi {
+    text-decoration: line-through;
+}
+
+
+/*index style*/
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.tSpace {
+    width: 200px;
+    height: 100px;
+}
+
+#addTask {
+    background-color: #56a780;
+    box-shadow: 5px 10px #da5416
+}
+
+#uncompTask {
+    background-color: #98ccd6;
+    box-shadow: 5px 10px #56a780;
+}
+
+#compTask {
+    margin: 60px auto;
+    background-color: #da5416;
+    box-shadow: 5px 10px #98ccd6
+}
+
+.centTxt {
+    line-height: 100px;
+}
+
+#indexBgColor {
+    background-color: #000;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
